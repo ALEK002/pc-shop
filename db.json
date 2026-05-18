@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "test",
+      "password": "123"
+    },
+    {
+      "username": "test1 ",
+      "password": "test1!",
+      "id": "ToNa6XZ4Ak0"
+    },
+    {
+      "username": "qwe",
+      "password": "qwe",
+      "id": "vThAgjQaTPc"
+    },
+    {
+      "username": "qwe",
+      "password": "qwe",
+      "id": "9srbes6Rwgw"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "NVIDIA GeForce RTX 5060",
+      "condition": "Нов артикул",
+      "price": 480,
+      "description": "Страхотна видеокарта за 1080p/1440p гейминг. В оригинална опаковка."
+    },
+    {
+      "id": "2",
+      "name": "Intel Core i9-13900k",
+      "condition": "Втора ръка",
+      "price": 400,
+      "description": "Много запазен процесор, работил е около 2 години. В гаранция до 2027!!!"
+    },
+    {
+      "id": "3",
+      "name": "RAM Памет 16GB (2x8GB) DDR4",
+      "condition": "Втора ръка",
+      "price": 140,
+      "description": "Бърза памет на 3200MHz, подходяща за всякакви конфигурации базирани на DDR4."
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
