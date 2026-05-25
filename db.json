@@ -21,28 +21,31 @@
       "id": "9srbes6Rwgw"
     }
   ],
-  "products": [
+    "products": [
     {
-      "id": "1",
-      "name": "NVIDIA GeForce RTX 5060",
-      "condition": "Нов артикул",
-      "price": 480,
-      "description": "Страхотна видеокарта за 1080p/1440p гейминг. В оригинална опаковка."
+      "id": 1,
+      "name": "Видео карта",
+      "condition": "Ново",
+      "price": 850,
+      "description": "Мощна видео карта за гейминг.",
+      "image": "https://img-cdn.heureka.group/v1/e6a07900-f6c7-4c59-8a58-58fdb386de5c.jpg?width=400&height=400"
     },
     {
-      "id": "2",
-      "name": "Intel Core i9-13900k",
-      "condition": "Втора ръка",
+      "id": 2,
+      "name": "Процесор",
+      "condition": "Втора употреба",
       "price": 400,
-      "description": "Много запазен процесор, работил е около 2 години. В гаранция до 2027!!!"
+      "description": "Бърз процесор за работа и игри.",
+      "image": "https://img-cdn.heureka.group/v1/3a01e256-9993-48bb-b658-79cc53f92cec.jpg"
     },
     {
-      "id": "3",
-      "name": "RAM Памет 16GB (2x8GB) DDR4",
-      "condition": "Втора ръка",
-      "price": 140,
-      "description": "Бърза памет на 3200MHz, подходяща за всякакви конфигурации базирани на DDR4."
+      "id": 3,
+      "name": "RAM памет",
+      "condition": "Ново",
+      "price": 120,
+      "description": "16GB RAM за перфектен мултитаскинг.",
+      "image": "https://s13emagst.akamaized.net/products/101460/101459080/images/res_ad9b36af4d96d349a547905abb14a880.jpg?width=720&height=720&hash=2590C0BB09BB02905B7E25EE3C60EF31"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "users": []
 }

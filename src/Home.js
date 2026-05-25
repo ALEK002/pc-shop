@@ -5,22 +5,28 @@ function Home() {
 
   useEffect(() => {
     fetch('http://localhost:3001/products')
-      .then(response => response.json())
-      .then(data => setProducts(data));
+      .then(res => res.json())
+      .then(data => {
+        setProducts(data);
+      });
   }, []);
 
   return (
     <div>
-      <h2>Налични компоненти</h2>
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+      <h2>Налични части:</h2>
+      <div>
         {products.map(product => (
-          <div key={product.id} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '15px', width: '300px' }}>
-            <h3 style={{ margin: '0 0 10px 0' }}>{product.name}</h3>
-            <span style={{ backgroundColor: product.condition === 'Нов артикул' ? '#4CAF50' : '#FF9800', color: 'white', padding: '3px 8px', borderRadius: '4px' }}>
-              {product.condition}
-            </span>
-            <p><strong>Цена:</strong> {product.price} €</p>
-            <p style={{ color: '#555' }}>{product.description}</p>
+          <div key={product.id} style={{ border: '1px solid black', marginBottom: '20px', padding: '15px', width: '350px' }}>
+            <h3>{product.name}</h3>
+            
+            {product.image && (
+              <img src={product.image} alt={product.name} style={{ width: '100%', maxHeight: '200px', objectFit: 'contain', marginBottom: '10px' }} />
+            )}
+
+            <p>Състояние: <b>{product.condition}</b></p>
+            <p>Цена: <span style={{ color: 'green', fontSize: '18px', fontWeight: 'bold' }}>{product.price} лв.</span></p>
+            <p>{product.description}</p>
+            <button>Купи</button>
           </div>
         ))}
       </div>
