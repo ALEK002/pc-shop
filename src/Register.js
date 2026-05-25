@@ -24,7 +24,7 @@ function Register() {
       <input type="text" placeholder="Изберете потребителско име" value={username} onChange={(e) => setUsername(e.target.value)} required /><br/><br/>
       <input type="password" placeholder="Изберете парола" value={password} onChange={(e) => setPassword(e.target.value)} required /><br/><br/>
       <button type="submit">Регистрирай ме</button>
-    </form>
+    </form> 
   );
 }
 
